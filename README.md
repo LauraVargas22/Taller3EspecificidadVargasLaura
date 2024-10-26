@@ -64,7 +64,8 @@ Mediante la elaboración de este trabajo se busca comprender la funcionalidad de
         #main h1 {
             color: red; /*Especificidad = 101, tipo de selector ID + elemento */
         }
-    Como se menciona en cada línea el valor de especificidad varía según el tipo de selector que se use para determinar la regla de estilo, en este caso la regla de estilo que tiene superioridad es **#main h1** al sumar #main como un selector tipo ID (100) y a h1 selector tipo elemnto (1). ![alt text](skeleton/images/image2.png)
+    Como se menciona en cada línea el valor de especificidad varía según el tipo de selector que se use para determinar la regla de estilo, en este caso la regla de estilo que tiene superioridad es **#main h1** al sumar #main como un selector tipo ID (100) y a h1 selector tipo elemnto (1).
+    ![alt text](skeleton/images/image2.png)
 
     En el segundo ejercicio, se nos entregó el siguiente código:
 
@@ -120,6 +121,6 @@ Mediante la elaboración de este trabajo se busca comprender la funcionalidad de
         #footer p {
             color: grey;
         }
-    Especificidad de 101, al tener ID (100) + elemento p (1)
+    Especificidad de 101, al tener ID (100) + elemento p (1).
     ![alt text](skeleton/images/image6.png)
 
