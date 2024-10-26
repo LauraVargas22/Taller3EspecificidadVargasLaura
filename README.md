@@ -43,6 +43,7 @@ Mediante la elaboración de este trabajo se busca comprender la funcionalidad de
 
 3. **Parte 3: Calculando Especificidad**
     Posteriormente se desarrolló en siguiente contenedor:
+    
         <div id="main" class="content">
             <h1>Título</h1>
             <p>Este es un párrafo</p>
@@ -64,6 +65,7 @@ Mediante la elaboración de este trabajo se busca comprender la funcionalidad de
     Como se menciona en cada línea el valor de especificidad varía según el tipo de selector que se use para determinar la regla de estilo, en este caso la regla de estilo que tiene superioridad es **#main h1** al sumar #main como un selector tipo ID (100) y a h1 selector tipo elemnto (1).
 
     En el segundo ejercicio, se nos entregó el siguiente código:
+
         <div id="box" class="content">
             <p class="text">Texto aquí</p>
         </div> 
@@ -84,6 +86,7 @@ Mediante la elaboración de este trabajo se busca comprender la funcionalidad de
 4. **Parte 4: Desafio Final**
     Desafío: Diseñando una Página Completa con Estilos Conflictivos
     Para la elaboración de está última parte se nos entregó el siguiente código:
+
         <div class="header" id="top">
         <h1>Bienvenido</h1>
         <p id="intro">Este es el sitio web.</p>
@@ -96,7 +99,7 @@ Mediante la elaboración de este trabajo se busca comprender la funcionalidad de
         <p>Pie de página</p>
         </footer>
     Con el cual se debían aplicar reglas de estilo basandonos en los siguientes requerimientos:
-    a. El <h1> en el .header debe ser de color blanco.
+    a. El h1 en el .header debe ser de color blanco.
         #top h1 {
         color: white;
         background-color: black;
@@ -104,17 +107,17 @@ Mediante la elaboración de este trabajo se busca comprender la funcionalidad de
     }
     Especificidad de 101, se adicionó el background-color para una mejor visualización del resultado.
 
-    b. El texto del <p> en .content debe ser rojo.
+    b. El texto del p en .content debe ser rojo.
         .contentDes .highlight {
             color: red;
         }
     Especificidad de 20, al tener dos tipo de selectores clases cada uno con 10.
 
-    c. El texto del <footer> debe ser gris.
+    c. El texto del footer debe ser gris.
         #footer p {
             color: grey;
         }
-    Especificidad de 101, al tener ID (100) + elemento <p> (1)
+    Especificidad de 101, al tener ID (100) + elemento p (1)
 
 
 
