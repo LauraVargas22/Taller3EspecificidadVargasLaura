@@ -26,8 +26,9 @@ Mediante la elaboración de este trabajo se busca comprender la funcionalidad de
             color: red; /* Especificidad 100 por el tipo de selector ID, el cual tiene prioridad sobre los anteriores.*/
         }
 
-    Por lo que, obtuvimos como resultado el texto en color ROJO al tener mayor valor de especificidad el ID parrafo.
-
+    Por lo que, obtuvimos como resultado el texto en color ROJO al tener mayor valor de especificidad el ID parrafo. 
+    <img src="skeleton\images\image.png">
+    
     En el segundo ejercicio, hicimos uso de la regla !important de está manera:
 
         /*Parte 2 */
@@ -39,11 +40,12 @@ Mediante la elaboración de este trabajo se busca comprender la funcionalidad de
             color: red; /* Especificidad 100 por el tipo de selector ID, el cual tiene prioridad sobre los anteriores. Aunque la especificidad se ve afectada al encontrar un !important el cual da prioridad al tipo de selector elemento*/
         }
 
-    Teniendo como resultado el texto AZUL pues la regla !important da prevalencia al selector elemento.
+    Teniendo como resultado el texto AZUL pues la regla !important da prevalencia al selector elemento. 
+    <img src="skeleton\images\image1.png">
 
 3. **Parte 3: Calculando Especificidad**
     Posteriormente se desarrolló en siguiente contenedor:
-    
+
         <div id="main" class="content">
             <h1>Título</h1>
             <p>Este es un párrafo</p>
@@ -62,7 +64,7 @@ Mediante la elaboración de este trabajo se busca comprender la funcionalidad de
         #main h1 {
             color: red; /*Especificidad = 101, tipo de selector ID + elemento */
         }
-    Como se menciona en cada línea el valor de especificidad varía según el tipo de selector que se use para determinar la regla de estilo, en este caso la regla de estilo que tiene superioridad es **#main h1** al sumar #main como un selector tipo ID (100) y a h1 selector tipo elemnto (1).
+    Como se menciona en cada línea el valor de especificidad varía según el tipo de selector que se use para determinar la regla de estilo, en este caso la regla de estilo que tiene superioridad es **#main h1** al sumar #main como un selector tipo ID (100) y a h1 selector tipo elemnto (1). ![alt text](skeleton/images/image2.png)
 
     En el segundo ejercicio, se nos entregó el siguiente código:
 
@@ -78,10 +80,10 @@ Mediante la elaboración de este trabajo se busca comprender la funcionalidad de
         }
 
     Por lo que el "Texto Aquí" era de color azul al tener una especificidad igual a 101, se tenia que modificar el código de tal manera que el texto fuera amarillo, esto sin hacer uso de !important, el resultado fue este:
-        #box .text p{
+        #box .text {
             color: yellow;
         }
-    Teniendo una especificidad de 111, al ser box un ID (100) + .text una clase (10) + p un elemento (1).
+    Teniendo una especificidad de 110, al ser box un ID (100) + .text una clase (10). ![alt text](skeleton/images/image3.png)
 
 4. **Parte 4: Desafio Final**
     Desafío: Diseñando una Página Completa con Estilos Conflictivos
@@ -105,19 +107,19 @@ Mediante la elaboración de este trabajo se busca comprender la funcionalidad de
         background-color: black;
         max-width: max-content;
     }
-    Especificidad de 101, se adicionó el background-color para una mejor visualización del resultado.
+    Especificidad de 101, se adicionó el background-color para una mejor visualización del resultado. ![alt text](skeleton/images/image4.png)
 
     b. El texto del p en .content debe ser rojo.
         .contentDes .highlight {
             color: red;
         }
     Especificidad de 20, al tener dos tipo de selectores clases cada uno con 10.
+    ![alt text](skeleton/images/image5.png)
 
     c. El texto del footer debe ser gris.
         #footer p {
             color: grey;
         }
     Especificidad de 101, al tener ID (100) + elemento p (1)
-
-
+    ![alt text](skeleton/images/image6.png)
 
