@@ -1,7 +1,7 @@
 /*Parte 2 */
 p {
     /* color: blue; Valor de especificidad 1 por el tipo de selector elemento */
-    color: blue !important; /*Al añadir !important no se tiene en cuenta el valor de especificidad, teniendo prevalencia esta regla de estilo */
+    /* color: blue !important; Al añadir !important no se tiene en cuenta el valor de especificidad, teniendo prevalencia esta regla de estilo */
 }
 
 .container p {
@@ -10,5 +10,51 @@ p {
 
 #parrafo {
     color: red; /* Especificidad 100 por el tipo de selector ID, el cual tiene prioridad sobre los anteriores. Aunque la especificidad se ve afectada al encontrar un !important el cual da prioridad al tipo de selector elemento*/
+}
+
+/* Parte 3: Ejercicio 1 */
+
+h1 {
+    color: blue; /*Especificidad = 1, tipo de selector elemento */
+}
+
+.content h1 {
+    color: green; /*Especificidad = 11, tipo de selector clase + elemento */
+}
+
+#main h1 {
+    color: red; /*Especificidad = 101, tipo de selector ID + elemento */
+}
+
+/* Parte 3: Ejercicio 2 */
+#box p {
+    color: blue;
+}
+.content .text {
+    color: green;
+}
+
+#box .text p{
+    color: yellow;
+}
+
+/* Parte 4: Desafio final*/
+/* Desafio el h1 en .header debe ser blanco */
+
+#top h1 {
+    color: white;
+    background-color: black;
+    max-width: max-content;
+}
+
+/* Desafio: El texto del <p> en .content debe ser rojo. */
+
+.contentDes .highlight {
+    color: red;
+}
+
+/* Desafio: El texto del <footer> debe ser gris. */
+#footer p {
+    color: grey;
 }
 
